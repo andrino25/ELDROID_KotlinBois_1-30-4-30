@@ -16,12 +16,11 @@
             android:name=".Dashboard.DashboardPage"
             android:exported="true">
 
-            <intent-filter>
+<!--            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
+            </intent-filter>-->
 
         </activity>
         <activity
@@ -36,11 +35,11 @@
         <activity
             android:name=".LandingPage.LandingPage"
             android:exported="true">
-            <!--<intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
