@@ -13,16 +13,16 @@
         android:theme="@style/Theme.Gagambrawl"
         tools:targetApi="31">
         <activity
+            android:name=".Profile.HelpCenter"
+            android:exported="false" />
+        <activity
             android:name=".Dashboard.DashboardPage"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
         <activity
             android:name=".Authentication.ForgotPasswordPage"
@@ -35,15 +35,6 @@
             android:exported="false" />
         <activity
             android:name=".LandingPage.LandingPage"
-            android:exported="true">
-            <!--<intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
-        </activity>
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
 
             <!--
