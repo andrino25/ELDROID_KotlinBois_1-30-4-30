@@ -3,25 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard.ProfileFragment">
+    tools:context=".Dashboard.ProfileFragment"
+    android:layout_marginBottom="10dp">
 
     <RelativeLayout
         android:id="@+id/profileHeaderContainer"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
+
         <TextView
             android:id="@+id/profileHeader"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:text="Profile"
+            android:text="@string/profile"
             android:paddingTop="16dp"
             android:paddingBottom="10dp"
             android:paddingRight="16dp"
             android:paddingLeft="16dp"
             android:fontFamily="@font/medium"
-            android:textSize="24dp"
+            android:textSize="24sp"
             android:textColor="@color/white"
-            android:background="#6A1221"/>
+            android:background="@color/maroon"/>
 
         <RelativeLayout
             android:id="@+id/profileContainer"
@@ -128,8 +130,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
-            android:backgroundTint="#6a1221"
+            android:backgroundTint="@color/maroon"
             android:background="@drawable/bg_profile_button"
             android:layout_alignParentBottom="true">
             <ImageView

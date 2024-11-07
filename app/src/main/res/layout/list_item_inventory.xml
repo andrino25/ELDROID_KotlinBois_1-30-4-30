@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:background="@drawable/spider_gray_container">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/i_spider_image"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:shapeAppearanceOverlay="@style/SemiCircularImageViewStyle"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/spider_sample_img" />
+
+        <TextView
+            android:id="@+id/i_spider_breed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/i_spider_image"
+            android:text="Goliath BirdEater"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"/>
+
+
+        <TextView
+            android:id="@+id/i_spider_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/i_spider_breed"
+            android:layout_marginStart="10dp"
+            android:text="@string/sample_text"
+            android:textColor="@color/green"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            />
+
+        <ImageButton
+            android:id="@+id/starBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_star_on"
+            android:background="#00ffffff"
+            android:scaleType="fitCenter"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:onClick="onToggleStar"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

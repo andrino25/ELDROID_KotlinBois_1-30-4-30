@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard.HomeFragment">
+    tools:context=".Dashboard.HomeFragment"
+    android:layout_marginBottom="60dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -34,7 +35,7 @@
             app:layout_constraintStart_toStartOf="parent"/>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/catalog_recycler_view"
+            android:id="@+id/home_catalog_recycler_view"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -55,19 +56,20 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:textColor="@color/black"
-            app:layout_constraintTop_toBottomOf="@id/catalog_recycler_view"
+            app:layout_constraintTop_toBottomOf="@id/home_catalog_recycler_view"
             app:layout_constraintStart_toStartOf="parent"/>
 
         <TextView
             android:id="@+id/showAll_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
             android:text="@string/show_all"
             android:textColor="@color/red"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@id/catalog_recycler_view"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_catalog_recycler_view"
+            tools:ignore="TextContrastCheck" />
 
 
         <androidx.recyclerview.widget.RecyclerView
