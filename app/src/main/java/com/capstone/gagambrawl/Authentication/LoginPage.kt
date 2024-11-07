@@ -8,6 +8,7 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
+import com.capstone.gagambrawl.Dashboard.DashboardPage
 import com.capstone.gagambrawl.R
 
 class LoginPage : AppCompatActivity() {
@@ -40,6 +41,16 @@ class LoginPage : AppCompatActivity() {
         toFPaswword.setOnClickListener {
             // Create an intent to navigate to LoginPage
             val intent = Intent(this, ForgotPasswordPage::class.java)
+            startActivity(intent)
+
+            // Apply custom fade in/out animation with 2-second duration
+            overridePendingTransition(R.anim.slow_fade_in, R.anim.slow_fade_out)
+        }
+
+        val loginBtn = findViewById<Button>(R.id.lp_et_loginBtn)
+        loginBtn.setOnClickListener {
+            // Create an intent to navigate to LoginPage
+            val intent = Intent(this, DashboardPage::class.java)
             startActivity(intent)
 
             // Apply custom fade in/out animation with 2-second duration

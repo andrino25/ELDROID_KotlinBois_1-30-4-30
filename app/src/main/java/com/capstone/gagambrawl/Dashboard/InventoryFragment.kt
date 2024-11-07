@@ -1,11 +1,15 @@
 package com.capstone.gagambrawl.Dashboard
 
+import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageButton
 import com.capstone.gagambrawl.R
+import com.google.android.material.imageview.ShapeableImageView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,7 +39,33 @@ class InventoryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_inventory, container, false)
+         val view = inflater.inflate(R.layout.fragment_inventory, container, false)
+
+        val addBtn: ShapeableImageView = view.findViewById(R.id.addBtn)
+        addBtn.setOnClickListener {
+            // Create a dialog with a custom layout
+            val dialog = Dialog(requireContext())
+            dialog.setContentView(R.layout.dialog_add_spider)  // Replace with the actual dialog layout name
+
+            // Set fade-in animation when the dialog shows
+            dialog.window?.attributes?.windowAnimations = R.style.DialogFadeAnimation
+
+            // Find the close button inside the dialog's layout
+            val closeBtn: ImageButton = dialog.findViewById(R.id.i_close_btn)  // Replace with the actual ID of the close button
+
+            // Set an OnClickListener to dismiss the dialog when the close button is clicked
+            closeBtn.setOnClickListener {
+                dialog.dismiss()  // Close the dialog
+            }
+
+            // Show the dialog
+            dialog.show()
+        }
+
+
+
+        return view
+
     }
 
     companion object {
