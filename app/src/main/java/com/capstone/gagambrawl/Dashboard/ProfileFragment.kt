@@ -11,8 +11,8 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.RelativeLayout
 import com.capstone.gagambrawl.Authentication.LoginPage
+import com.capstone.gagambrawl.Profile.HelpCenter
 import com.capstone.gagambrawl.R
-import com.google.android.material.imageview.ShapeableImageView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -72,6 +72,14 @@ class ProfileFragment : Fragment() {
 
             // Show the dialog
             dialog.show()
+        }
+
+        val helpCenterButton: RelativeLayout = view.findViewById(R.id.helpCenterButton)
+        helpCenterButton.setOnClickListener {
+            val intent = Intent(requireContext(), HelpCenter::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NO_ANIMATION
+            startActivity(intent)
+            requireActivity().overridePendingTransition(0, 0) // No transition animation
         }
 
         return view

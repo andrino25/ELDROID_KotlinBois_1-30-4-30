@@ -27,4 +27,25 @@
     <string name="are_you_leaving">Are you leaving?</string>
     <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
     <string name="logout">Logout</string>
+
+    <!-- Help Center Headers -->
+    <string name="help_center">Help Center</string>
+    <string name="faqs">FAQs</string>
+    <string name="feedback">Feedback</string>
+
+    <!-- FAQ Questions -->
+    <string name="faq_add_spider">How do I add a new spider to the inventory?</string>
+    <string name="faq_edit_spider">Can I edit the information of a spider after adding it to the inventory?</string>
+    <string name="faq_search_spider">How can I search for a specific spider in the catalog?</string>
+    <string name="faq_delete_spider">What should I do if I accidentally delete a spider from the inventory?</string>
+
+    <!-- FAQ Answers -->
+    <string name="faq_add_spider_answer">To add a new spider, navigate to the \'Add Spider\' section from the main menu. Fill in the spider\'s details, such as species, color, origin, and characteristics, then tap \'Save\' to add it to the inventory.</string>
+    <string name="faq_edit_spider_answer">Yes, you can edit spider details. Go to the \'Spider Catalog,\' select the spider you want to update, and tap the \'Edit\' button. Make the necessary changes and save them.</string>
+    <string name="faq_search_spider_answer">Use the search bar at the top of the \'Spider Catalog\' page to search by species name, color, origin, or other characteristics. You can also use filters to narrow down the results.</string>
+    <string name="faq_delete_spider_answer">Once a spider is deleted, it cannot be recovered. Make sure to confirm your decision when deleting any entry. We recommend double-checking before removing any entry.</string>
+
+    <!-- Feedback Section -->
+    <string name="feedback_hint">Write feedback…</string>
+    <string name="send_feedback">Send Feedback</string>
 </resources>
