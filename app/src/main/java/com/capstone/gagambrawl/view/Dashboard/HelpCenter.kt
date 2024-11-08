@@ -1,4 +1,4 @@
-package com.capstone.gagambrawl.Profile
+package com.capstone.gagambrawl.view.Dashboard
 
 import android.os.Bundle
 import android.widget.ImageButton
