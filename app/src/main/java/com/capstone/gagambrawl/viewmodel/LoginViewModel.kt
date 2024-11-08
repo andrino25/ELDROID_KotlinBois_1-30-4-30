@@ -17,7 +17,6 @@ class LoginViewModel : ViewModel() {
     fun login(username: String, password: String) {
 
 
-            // For this example, we'll just use a mock check
             if (username == "testuser" && password == "password") {
                 _loginStatus.value = true
             } else {
