@@ -1,4 +1,4 @@
-package com.capstone.gagambrawl.Dashboard
+package com.capstone.gagambrawl.view.Dashboard
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

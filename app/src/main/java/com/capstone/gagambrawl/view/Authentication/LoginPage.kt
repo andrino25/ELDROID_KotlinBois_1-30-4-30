@@ -1,4 +1,4 @@
-package com.capstone.gagambrawl.Authentication
+package com.capstone.gagambrawl.view.Authentication
 
 import android.content.Intent
 import android.os.Build
@@ -8,7 +8,7 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
-import com.capstone.gagambrawl.Dashboard.DashboardPage
+import com.capstone.gagambrawl.view.Dashboard.DashboardPage
 import com.capstone.gagambrawl.R
 
 class LoginPage : AppCompatActivity() {
