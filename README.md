@@ -7,7 +7,7 @@
 ## Team Members
 
 **ELDROID Team:**
-- [Andrino](https://github.com/andrino25)
+- [Andrino](https://github.com/andrino25) - Alliance
 - [Apiag](https://github.com/Kevinboo123)
 - [Diamos](https://github.com/diamosclint)
 - [Fuentes](https://github.com/nostraJello)
